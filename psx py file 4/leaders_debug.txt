@@ -1,0 +1,16 @@
+PSX se screener aur symbols ki list le raha hoon...
+KSE-100 list: 100 companies
+screener: 758 rows, columns = ['symbol', 'sector', 'listed_in', 'market_cap', 'price', 'change_pct', 'change_1y_pct', 'pe_ratio', 'dividend_yield', 'free_float', 'volume_avg_30d']
+symbols : 1068 rows, columns = ['symbol', 'name', 'sector_name', 'is_etf', 'is_debt', 'is_gem']
+screener ki pehli 3 qatarein:
+  symbol  sector listed_in  market_cap   price  change_pct  change_1y_pct  pe_ratio  dividend_yield  free_float  volume_avg_30d
+0    786   813.0    ALLSHR         NaN   23.10       -3.23          83.77      0.00            0.00         NaN        189813.0
+1   786R   813.0                   NaN    2.47       -6.44           0.00      0.00            0.00         NaN        185889.0
+2   AABS   826.0    ALLSHR         NaN  754.97       -0.80         -26.94     17.68            2.27         NaN           480.0
+symbol column = symbol | market cap column = market_cap
+symbols: symbol column = symbol | sector column = sector_name
+market cap parse hui: 76 / 758
+sector mila: 647 / 743
+filter ke baad baqi companies: 0
+
+Sector leaders nahi ban sake. leaders_debug.txt mujhe bhej dein.

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "types": ["./frontend/node_modules/vite/client"],
+    "paths": {
+      "../services/*": ["./frontend/src/services/*"],
+      "../types": ["./frontend/src/types"],
+      "../components/*": ["./frontend/src/components/*"],
+      "../hooks/*": ["./frontend/src/hooks/*"],
+      "react": ["./frontend/node_modules/@types/react", "./frontend/node_modules/react"],
+      "react/*": ["./frontend/node_modules/@types/react/*", "./frontend/node_modules/react/*"],
+      "react/jsx-runtime": ["./frontend/node_modules/@types/react/jsx-runtime", "./frontend/node_modules/react/jsx-runtime"],
+      "react-dom": ["./frontend/node_modules/@types/react-dom", "./frontend/node_modules/react-dom"],
+      "lucide-react": ["./frontend/node_modules/lucide-react"]
+    }
+  },
+  "include": [
+    "Market.tsx"
+  ]
+}
