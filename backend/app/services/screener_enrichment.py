@@ -19,7 +19,7 @@ from .indicators import calculate_indicators
 logger = logging.getLogger(__name__)
 
 _PKT = timezone(timedelta(hours=5))
-_CACHE_DIR = Path(__file__).resolve().parents[2]
+_CACHE_DIR = Path("/tmp") if os.getenv("VERCEL") else Path(__file__).resolve().parents[2]
 _TF_CACHE_FILE = _CACHE_DIR / ".screener_tf_cache.json"
 _CORP_CACHE_FILE = _CACHE_DIR / ".screener_corp_cache.json"
 
