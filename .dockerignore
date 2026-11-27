@@ -1,0 +1,13 @@
+.git
+.venv
+venv
+**/__pycache__
+**/*.pyc
+**/*.db
+**/*.sqlite3
+**/.env
+frontend/node_modules
+frontend/dist
+*.jpeg
+*.png
+psx py file*

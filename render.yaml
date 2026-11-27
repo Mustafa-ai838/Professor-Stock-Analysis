@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: professor-stock-analysis
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATA_PROVIDER
+        value: psxlens
+      - key: API_TIMEOUT
+        value: "15"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        value: sqlite:///./professor_stocks.db

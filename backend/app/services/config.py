@@ -54,7 +54,7 @@ class MarketDataConfig:
             dividend_cache_ttl=_positive_int("DIVIDEND_CACHE_TTL", 86400),
             financial_cache_ttl=_positive_int("FINANCIAL_CACHE_TTL", 86400),
             sector_cache_ttl=_positive_int("SECTOR_CACHE_TTL", 300),
-            api_timeout=_positive_float("API_TIMEOUT", 5),
+            api_timeout=_positive_float("API_TIMEOUT", 15),
             max_retries=_nonnegative_int("MAX_RETRIES", 2),
         )
 
